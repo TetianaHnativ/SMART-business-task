@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  color: #111111;
+  background-color: rgba(173, 216, 230, 0.5);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.main-container .main-title {
+  margin: 0;
+}
+@media (max-width: 1024px) {
+  .main-container .main-title {
+    margin-bottom: 0;
+  }
+}
+.main-container .filters-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: 30px;
+  padding: 0;
+}
+@media (max-width: 1024px) {
+  .main-container .filters-list {
+    flex-direction: column;
+  }
+}
+.main-container .filters-list input {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+}
+.main-container .error-message {
+  font-size: 30px;
+}
+.main-container .no-user-title {
+  text-align: center;
+  font-size: 25px;
+}
+.main-container .table-container {
+  max-width: 1000px;
+  overflow: auto;
+}
+@media (max-width: 1024px) {
+  .main-container .table-container {
+    max-width: 800px;
+    max-height: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container .table-container {
+    max-width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .main-container .table-container {
+    max-width: 300px;
+  }
+}
+.main-container .table-container table,
+.main-container .table-container th,
+.main-container .table-container td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.main-container .table-container .users-table {
+  font-size: 20px;
+  background-color: #ccf7fa;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  .main-container .table-container .users-table {
+    font-size: 18px;
+  }
+}
+.main-container .table-container .users-table tr:nth-child(even) {
+  background-color: #6ee7f2;
+}
+.main-container .table-container .users-table th {
+  font-weight: bold;
+  background-color: #3fc3ee;
+  padding: 15px;
+}
+.main-container .table-container .users-table td {
+  text-align: center;
+  padding: 10px;
+}/*# sourceMappingURL=App.css.map */
